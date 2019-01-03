@@ -1,0 +1,670 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0 2vw;
+
+}
+
+.index_color {
+    background: #2e2e2e;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.hide {
+    visibility: hidden;
+}
+
+/*--- MENU ---*/
+
+nav {
+    margin: 2vw;
+}
+
+
+.menu_mobil {
+    display: none;
+}
+
+.menuknap {
+    display: inline-block;
+    font-size: 12vw;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+.menu {
+    list-style-type: none;
+}
+
+
+.menu_desktop {
+    display: flex;
+    width: 95vw;
+    background: #2e2e2e;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    margin: 2vw 3vw;
+    cursor: pointer;
+}
+
+
+/*  ------ INDEX ------ */
+
+
+.container_index {
+    background-color: #f8f8f8;
+    width: 95vw;
+    height: 40vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.index_title {
+    font-family: 'Lato', sans-serif;
+    color: #223249;
+    font-weight: 800;
+    font-size: 4vw;
+    margin: 3vw;
+}
+
+
+.index_line {
+    background-image: url(ikoner/sortstreg.svg);
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 5vw;
+
+}
+
+
+
+
+.index_subtitle {
+    font-family: 'Lato', sans-serif;
+    color: #223249;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+
+
+
+/*  ------ Section portfolio  ------ */
+
+
+
+.container_work {
+    margin: 2vw 2vw 2vw 2vw;
+    background-color: #f8f8f8;
+    width: 95vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+
+.container_work a:hover .box_text2 {
+    visibility: visible;
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.container_work a:hover .box_line {
+    visibility: visible;
+    animation-name: line_grow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.container_work a:hover .box {
+    opacity: 0.9;
+}
+
+
+
+.box {
+    flex-basis: 300px;
+    width: 25vw;
+    height: 25vw;
+    flex-grow: 1;
+    text-decoration: none;
+    cursor: pointer;
+    display: grid;
+}
+
+
+
+.box_link {
+    text-decoration: none;
+    margin: 0;
+    margin: 3vw;
+}
+
+.box_text1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    margin: 0 auto;
+    margin-top: 4vw;
+
+}
+
+
+.box_text2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    margin: 0 auto;
+    margin-bottom: 4vw;
+
+
+}
+
+
+.box_line {
+    background-image: url(ikoner/hvidstreg.svg);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 1vw;
+    margin: 0 auto;
+
+}
+
+
+
+#color1 {
+    background: #C058AC;
+}
+
+#color2 {
+    background: #c72b2b;
+}
+
+#color3 {
+    background: #1C563D;
+}
+
+#color4 {
+    background: #5B7631;
+}
+
+#color5 {
+    background: #edd730;
+}
+
+#color6 {
+    background: #fa6e00;
+}
+
+#color7 {
+    background: #003afa;
+}
+
+#color8 {
+    background: #0f5030;
+}
+
+
+#color9 {
+    background: #2b0f4b;
+}
+
+
+
+
+
+/*  ------ ABOUT ------ */
+
+
+
+
+#container_about {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    width: 95vw;
+    margin: 2vw;
+
+}
+
+img {
+    width: 30vw;
+}
+
+#om_left {
+    flex-grow: 2;
+    flex-basis: 300px;
+
+    text-align: center;
+
+    margin-top: 10vw;
+}
+
+
+#om_right {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 3vw;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*---- Sociale medier knapper --- */
+
+#social_media {
+    width: 95vw;
+    margin: 2vw;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+    float: right;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+.social_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 7vw;
+    height: 10vw;
+    margin: 2vw 0vw 0vw 4vw;
+
+}
+
+
+
+/*------ CV ----- */
+
+.container_cv {
+    background-color: #f8f8f8;
+    width: 95vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+.cv_right {
+    flex-grow: 1;
+    flex-basis: 300px;
+    font-family: 'Lato', sans-serif;
+    margin: 4vw;
+}
+
+.cv_left {
+    flex-grow: 1;
+    flex-basis: 300px;
+    font-family: 'Lato', sans-serif;
+    margin: 4vw;
+}
+
+
+.cv_titel {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 2vw;
+    width: 30vw;
+    margin: 2vw 0;
+}
+
+.it_titel {
+    font-weight: 900;
+}
+
+.it_liste {
+    font-size: 0.9vw;
+
+}
+
+.container_job {
+    display: flex;
+    flex-direction: column;
+}
+
+.periode_job {
+    font-weight: 900;
+    font-size: 1.2vw;
+}
+
+
+.titel_job {
+    margin: 0.5vw 0;
+
+}
+
+.beskrivelse_job {
+    font-size: 0.9vw;
+}
+
+/*----- OPGAVER GRUND-styling ----*/
+
+.back {
+    background-image: url(ikoner/Left%20Arrow%202.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+    margin-left: 10vw;
+
+}
+
+.opgave_container {
+    margin: 1vw 19vw 1vw 19vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 4vw;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    color: black;
+}
+
+.integreret {
+    margin: 4vw;
+}
+
+.integreret_youtube {
+    text-align: center;
+    margin: 5vw 0;
+
+}
+
+.youtubelink_mobile {
+    display: none;
+}
+
+.intergeret_mobil {
+    text-align: center;
+    margin: 4vw 0;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 5vw 0vw;
+}
+
+/*---- EFFECTS --- */
+
+
+.fade_in {
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.slide_up {
+    animation-name: slide_up;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide_up {
+    0% {
+        transform: scaleX(0.5);
+    }
+
+    95% {
+        transform: scaleX(0.9);
+    }
+
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.line_grow {
+    animation-name: line_grow;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line_grow {
+    0% {
+        transform: scaleX(0);
+    }
+
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+/*------ MEDIA QUERIES ---- */
+
+
+@media only screen and (max-width: 414px) {
+
+    /*- SPLASH -*/
+
+    .container_index {
+        height: 150vw;
+    }
+
+
+    .index_title {
+        font-size: 12vw;
+    }
+
+    .index_line {
+        width: 90vw;
+    }
+
+    .index_subtitle {
+        font-size: 5vw;
+    }
+
+
+    /*- WORK -*/
+
+    .box {
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .box_text1 {
+        font-size: 6.5vw;
+    }
+
+    .box_line {
+        width: 70vw;
+    }
+
+    .box_text2 {
+        font-size: 5vw;
+    }
+
+    .hide {
+        visibility: visible;
+    }
+
+    /*- ABOUT -*/
+
+    .container_about {
+        flex-direction: column;
+
+    }
+
+    #om_left {}
+
+    #om_right {
+        font-size: 4vw;
+    }
+
+    /*- CV -*/
+
+
+    .cv_titel {
+        font-size: 8vw;
+        text-align: center;
+        width: 100%;
+        margin: 6vw 0;
+    }
+
+    .it_liste {
+        font-size: 4vw;
+
+    }
+
+    .periode_job {
+        font-size: 5vw;
+    }
+
+
+    .beskrivelse_job {
+        font-size: 4vw;
+    }
+
+
+    /*- OPGAVER -*/
+
+    .back {
+        width: 10vw;
+        height: 10vw;
+
+    }
+
+    a {
+        font-family: 'Lato', sans-serif;
+        font-size: 4vw;
+        color: black;
+    }
+
+    .youtubelink_mobile {
+        display: block;
+    }
+
+    .integreret_youtube {
+        display: none;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4vw;
+
+    }
+
+    .opgave_container {
+        margin: 5vw 10vw;
+
+
+    }
+
+
+
+    /*- MENU -*/
+
+    .menu_mobil {
+        display: block;
+    }
+
+    .menu_desktop {
+        display: none;
+    }
+
+    nav a {
+        font-size: 6vw;
+        color: white;
+    }
+
+
+
+}
