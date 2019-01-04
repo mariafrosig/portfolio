@@ -3,10 +3,7 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("siden vises");
 
-
     document.querySelector(".menu").classList.add("hidden");
-    document.querySelector(".page").classList.add("fade_in");
-
 
     document.querySelector(".menuknap").addEventListener("click", toggleMenu);
 

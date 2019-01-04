@@ -4,12 +4,11 @@ html {
 
 
 body {
-    margin: 0 2vw;
-
+    margin: auto;
 }
 
 .index_color {
-    background: #2e2e2e;
+    background: #313136;
 }
 
 .hidden {
@@ -23,8 +22,47 @@ body {
 
 /*--- MENU ---*/
 
-nav {
-    margin: 2vw;
+.menu_desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 6.5vw;
+    background: #313136;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#menu_desktop_left {
+    flex-basis: 400px;
+    align-self: center;
+    margin-left: 4vw;
+}
+
+#menu_desktop_right {
+    flex-basis: 400px;
+    text-align: right;
+    margin: 2vw 3vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#logo {
+    background-image: url(ikoner/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 18vw;
+    height: 5vw;
 }
 
 
@@ -37,6 +75,7 @@ nav {
     font-size: 12vw;
     font-family: 'Lato', sans-serif;
     color: white;
+    margin: 2vw;
 }
 
 
@@ -45,26 +84,10 @@ nav {
 }
 
 
-.menu_desktop {
-    display: flex;
-    width: 95vw;
-    background: #2e2e2e;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: fixed;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
-    margin: 2vw 3vw;
-    cursor: pointer;
-}
 
 
-/*  ------ INDEX ------ */
+
+/*  ------ INDEX ------
 
 
 .container_index {
@@ -108,22 +131,20 @@ nav a {
 }
 
 
-
+ */
 
 /*  ------ Section portfolio  ------ */
 
 
 
 .container_work {
-    margin: 2vw 2vw 2vw 2vw;
+    margin: 6.5vw auto;
     background-color: #f8f8f8;
     width: 95vw;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 
@@ -140,7 +161,7 @@ nav a {
 .container_work a:hover .box_line {
     visibility: visible;
     animation-name: line_grow;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -154,7 +175,7 @@ nav a {
 .box {
     flex-basis: 300px;
     width: 25vw;
-    height: 25vw;
+    height: 17vw;
     flex-grow: 1;
     text-decoration: none;
     cursor: pointer;
@@ -254,7 +275,7 @@ nav a {
     flex-wrap: wrap;
     background-color: #f8f8f8;
     width: 95vw;
-    margin: 2vw;
+    margin: 5vw auto;
 
 }
 
@@ -265,9 +286,7 @@ img {
 #om_left {
     flex-grow: 2;
     flex-basis: 300px;
-
     text-align: center;
-
     margin-top: 10vw;
 }
 
@@ -333,7 +352,7 @@ img {
 .container_cv {
     background-color: #f8f8f8;
     width: 95vw;
-    margin: 2vw;
+    margin: 5vw auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -402,7 +421,7 @@ img {
     width: 3vw;
     height: 3vw;
     cursor: pointer;
-    margin-left: 10vw;
+    margin: 3vw 0 0 10vw;
 
 }
 
@@ -425,8 +444,9 @@ h2 {
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
+    font-weight: 100;
 }
 
 a {
@@ -504,14 +524,14 @@ hr {
 
 .line_grow {
     animation-name: line_grow;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
 }
 
 @keyframes line_grow {
     0% {
-        transform: scaleX(0);
+        transform: scaleX(0.4);
     }
 
 
@@ -643,7 +663,7 @@ hr {
     }
 
     .opgave_container {
-        margin: 5vw 10vw;
+        margin: 2vw 10vw;
 
 
     }
