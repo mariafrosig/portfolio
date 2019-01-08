@@ -251,7 +251,7 @@ nav a:hover {
     flex-grow: 1;
 }
 
-#om_child {
+.om_child {
     flex-basis: 300px;
     flex-grow: 1;
     align-self: center;
@@ -346,6 +346,7 @@ nav a:hover {
 
 .it_titel {
     font-weight: 900;
+    font-size: 1.2vw;
 }
 
 .it_liste {
@@ -416,16 +417,40 @@ a {
 }
 
 
+iframe {
+    width: 100%;
+    height: 880px;
+}
+
+.integreret_foto {
+    text-align: center;
+    width: 100%;
+    background-size: 100%;
+    margin: 2vw auto;
+
+}
+
 .integreret_stor {
     margin: 2vw;
     display: block;
 }
 
+.integreret_spil {
+    text-align: center;
+}
 
 .integreret_lille {
     text-align: center;
-    margin: 5vw 0;
+    margin: 0 10vw;
+}
 
+.integreret_mobil {
+    text-align: center;
+}
+
+.integreret_mobil iframe {
+    width: 375px;
+    height: 667px;
 }
 
 .link_mobile {
