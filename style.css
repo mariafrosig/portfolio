@@ -58,6 +58,11 @@ nav a {
     cursor: pointer;
 }
 
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+
 #logo {
     background-image: url(ikoner/logo.svg);
     background-repeat: no-repeat;
@@ -95,7 +100,7 @@ nav a {
 
 
 .container_work {
-    margin: 12vw auto;
+    margin: 12vw auto 5vw auto;
     background-color: #f0f0f0;
     width: 95vw;
     display: flex;
@@ -183,7 +188,7 @@ nav a {
 }
 
 #color2 {
-    background: #FF5023;
+    background: #e0522e;
 }
 
 #color3 {
@@ -222,38 +227,49 @@ nav a {
 /*  ------ ABOUT ------ */
 
 
-
-
 #container_about {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #f8f8f8;
     width: 95vw;
-    margin: 5vw auto;
-
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-img {
-    width: 15vw;
-}
 
 #om_left {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-basis: 600px;
     flex-grow: 2;
-    flex-basis: 300px;
-    text-align: center;
-    margin-top: 10vw;
+    margin: auto;
 }
-
 
 #om_right {
+    display: flex;
+    flex-basis: 300px;
     flex-grow: 1;
-    flex-basis: 200px;
-    padding: 3vw;
-    margin: auto;
-    font-family: 'Lato', sans-serif;
 }
+
+#om_child {
+    flex-basis: 300px;
+    flex-grow: 1;
+    align-self: center;
+}
+
+
+#om_left p {
+    margin-left: 6vw;
+    font-size: 1vw;
+    padding: 7vw;
+}
+
+
+#om_right img {
+    width: 25vw;
+    margin: 3vw;
+}
+
 
 
 /*---- Sociale medier knapper --- */
@@ -291,10 +307,8 @@ img {
 }
 
 
-
-
-
 /*------ CV ----- */
+
 
 .container_cv {
     background-color: #f8f8f8;
@@ -359,6 +373,7 @@ img {
     font-size: 0.9vw;
 }
 
+
 /*----- OPGAVER GRUND-styling ----*/
 
 .back {
@@ -379,8 +394,7 @@ img {
 
 }
 
-
-h1 {
+.opgave_titel h1 {
     font-family: 'Lato', sans-serif;
     font-size: 4vw;
 }
@@ -401,29 +415,36 @@ a {
     color: black;
 }
 
-.integreret {
-    margin: 4vw;
+
+.integreret_stor {
+    margin: 2vw;
+    display: block;
 }
 
 
-.integreret_youtube {
+.integreret_lille {
     text-align: center;
     margin: 5vw 0;
 
 }
 
-.youtubelink_mobile {
+.link_mobile {
     display: none;
 }
 
-.intergeret_mobil {
-    text-align: center;
-    margin: 4vw 0;
-}
 
 hr {
     border: 1px solid black;
     margin: 5vw 0vw;
+}
+
+.sprite_foto {
+    display: none;
+}
+
+.description {
+    font-style: oblique;
+    font-weight: 100;
 }
 
 /*---- EFFECTS --- */
@@ -515,13 +536,14 @@ hr {
 
     /*- WORK -*/
 
+
     .box {
         width: 90vw;
-        height: 40vw;
+        height: 35vw;
     }
 
     .box_text1 {
-        font-size: 6.5vw;
+        font-size: 5.5vw;
     }
 
     .box_line {
@@ -529,7 +551,7 @@ hr {
     }
 
     .box_text2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .hide {
@@ -538,16 +560,15 @@ hr {
 
     /*- ABOUT -*/
 
-    .container_about {
-        flex-direction: column;
 
+    #om_left p {
+        font-size: 3.5vw;
     }
 
-    #om_left {}
 
-    #om_right {
-        font-size: 4vw;
-        margin: 4vw 0;
+    #om_right img {
+        margin-left: 8vw;
+        width: 80vw;
     }
 
     .fa {
@@ -584,6 +605,15 @@ hr {
 
     /*- OPGAVER -*/
 
+    .sprite_foto {
+        display: block;
+        width: 85vw;
+    }
+
+    .sprite_foto img {
+        width: 85vw;
+    }
+
     .back {
         margin-top: 10vw;
         width: 10vw;
@@ -597,13 +627,19 @@ hr {
         color: black;
     }
 
-    .youtubelink_mobile {
+    .link_mobile {
         display: block;
     }
 
-    .integreret_youtube {
+    .integreret_lille {
         display: none;
     }
+
+    .integreret_stor {
+        margin: 4vw;
+        display: none;
+    }
+
 
     h1 {
         font-size: 10vw;
@@ -620,7 +656,6 @@ hr {
 
     .opgave_container {
         margin: 2vw 10vw;
-
 
     }
 
